@@ -1,0 +1,14 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.button {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: var(--white);
+  background-color: var(--green);
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+}

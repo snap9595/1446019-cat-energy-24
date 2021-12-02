@@ -1,0 +1,23 @@
+/* .product-show {} */
+
+.product-show__title {
+  font-weight: normal;
+  color: var(--dark);
+  font-size: 1rem;
+  line-height: 125%;
+}
+
+.product-show__text {
+  font-family: "Arial", sans-serif;
+  font-size: 0.75rem;
+  line-height: 133%;
+}
+
+.product-show__link {
+  font-size: 1rem;
+  line-height: 125%;
+  color: var(--dark);
+  background-color: var(--grey);
+  text-decoration: none;
+  text-transform: uppercase;
+}

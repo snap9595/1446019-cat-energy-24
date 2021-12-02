@@ -1,0 +1,18 @@
+/* .page-main {} */
+
+.page-main__head {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: var(--black);
+}
+
+.page-main__title {
+  font-weight: normal;
+  font-size: 2.25rem;
+  line-height: 125%;
+}
+
+.page-main__text {
+  font-size: 0.88rem;
+  line-height: 129%;
+  text-transform: uppercase;
+}

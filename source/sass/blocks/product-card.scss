@@ -1,0 +1,26 @@
+/* .product-card {} */
+
+.product-card__title {
+  font-size: 1rem;
+  line-height: 125%;
+  font-weight: inherit;
+  color: var(--dark-grey);
+  text-transform: uppercase;
+}
+
+.product-card__link {
+  text-decoration: none;
+}
+
+/* .product-card__list {} */
+
+.product-card__item {
+  font-family: "Arial", sans-serif;
+  font-size: 0.75rem;
+  line-height: 133%;
+  list-style: none;
+
+  .product-card__price {
+    font-weight: normal;
+  }
+}

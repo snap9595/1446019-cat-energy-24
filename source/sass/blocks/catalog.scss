@@ -1,0 +1,14 @@
+.catalog {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 125%;
+}
+
+.catalog__title {
+  font-weight: inherit;
+  font-size: 2.25rem;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: var(--black);
+}

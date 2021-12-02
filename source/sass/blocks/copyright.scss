@@ -1,0 +1,10 @@
+/* .copyright {} */
+
+.copyright__link {
+  text-decoration: none;
+  color: var(--special-dark-grey);
+
+  &:active {
+    opacity: 0.3;
+  }
+}
