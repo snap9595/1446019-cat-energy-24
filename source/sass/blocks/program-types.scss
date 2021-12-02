@@ -1,0 +1,26 @@
+.program-types {
+  font-family: "Oswald", "Arial", sans-serif;
+
+  background-color: var(--grey);
+}
+
+.program-types__title {
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1.54;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.program-types__text {
+  font-family: "Arial", sans-serif;
+  color: var(--special-dark-grey);
+}
+
+.program-types__link {
+  font-size: 1rem;
+  line-height: 125%;
+  color: var(--black);
+  text-transform: uppercase;
+  text-decoration: none;
+}

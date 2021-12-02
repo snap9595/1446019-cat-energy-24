@@ -1,0 +1,20 @@
+/* .features {} */
+
+.features__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 2.25rem;
+  line-height: 111%;
+  color: var(--black);
+}
+
+.features__list {
+  list-style: none;
+}
+
+/* .features__list-item {} */
+
+.features__text {
+  font-size: 0.88rem;
+  line-height: 129%;
+}

@@ -1,0 +1,30 @@
+.promo {
+  background-color: var(--green);
+  font-family: "Oswald", "Arial", sans-serif;
+  color: var(--white);
+
+  .promo__link {
+    font-size: 0.88rem;
+    line-height: 129%;
+
+    &:hover {
+      background-color: var(--darken-green);
+    }
+
+    &:active {
+      color: var(--transparent-white30);
+      background-color: var(--darken-green);
+    }
+  }
+}
+
+.promo__title {
+  font-weight: normal;
+  font-size: 2.25rem;
+  line-height: 2.25;
+}
+
+.promo__text {
+  font-size: 0.88rem;
+  line-height: 110%;
+}

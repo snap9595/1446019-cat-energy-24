@@ -1,0 +1,63 @@
+.form-feedback {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 112%;
+  text-transform: uppercase;
+}
+
+/* .form-feedback__fieldset {} */
+
+.form-feedback__list {
+  list-style: none;
+
+  &--programs {
+    color: var(--dark-grey);
+  }
+
+  &--additionally {
+    color: var(--black);
+  }
+}
+
+/* .form-feedback__label {} */
+
+.form-feedback__input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 112%;
+  text-transform: uppercase;
+}
+
+/* .form-feedback__label-radio {}
+
+.form-feedback__input-label {} */
+
+.form-feedback__legend {
+  font-size: 1.5rem;
+  line-height: 108%;
+  color: var(--black);
+  text-transform: none;
+}
+
+.form-feedback__textarea {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  line-height: 150%;
+}
+/*
+.form-feedback__submit-wrapper {} */
+
+.form-feedback__button {
+  font-size: 1rem;
+  line-height: 125%;
+}
+
+.form-feedback__required {
+  font-family: "Arial", sans-serif;
+  font-size: 0.88rem;
+  line-height: 114%;
+  color: var(--black);
+  text-transform: none;
+}
