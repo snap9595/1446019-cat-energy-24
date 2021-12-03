@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - module3-task1
+      - master
   pull_request:
     branches: '*'
 

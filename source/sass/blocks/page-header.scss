@@ -1,5 +1,18 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
   color: #000000;
 }
-/*
-.page-header__logo-image {} */
+
+@media screen and (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

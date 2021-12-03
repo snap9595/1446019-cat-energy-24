@@ -1,7 +1,27 @@
 .page__body {
+  min-width: 280px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0  20px;
   font-family: "Arial", sans-serif;
   font-weight: normal;
   font-size: 0.88rem;
   line-height: 129%;
   color: var(--special-dark-grey);
+}
+
+@media screen and (min-width: $tablet-width) {
+  .page__body {
+    min-width: 708px;
+    padding: 0 30px;
+  }
+
+}
+
+@media screen and (min-width: $desktop-width) {
+  .page__body {
+    min-width: 1220px;
+    padding: 0 60px;
+  }
+
 }
