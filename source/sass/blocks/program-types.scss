@@ -1,6 +1,11 @@
 .program-types {
-  font-family: "Oswald", "Arial", sans-serif;
+  display: block;
+  padding: 20px;
+}
 
+.program-types__wrapper {
+  min-height: 266px;
+  font-family: "Oswald", "Arial", sans-serif;
   background-color: var(--grey);
 }
 
@@ -23,4 +28,31 @@
   color: var(--black);
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  /* .program-types {
+  } */
+
+  .program-types__wrapper {
+    width: 100%;
+    min-height: 372px;
+    padding: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-types {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    padding: 0 110px;
+  }
+
+  .program-types__wrapper {
+    max-width: 570px;
+    min-height: 374px;
+    padding: 50px;
+  }
 }

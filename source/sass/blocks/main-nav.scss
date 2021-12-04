@@ -32,26 +32,32 @@
   }
 }
 
-@media screen and (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
-    width: 500px;
+    /* width: 500px; */
   }
 
   .main-nav__item {
     margin-left: 20px;
+  }
 
-    &--active {
-      &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -11px;
-        height: 2px;
-        background-color: var(--green);
-      }
+  .main-nav__item--active {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -11px;
+      height: 2px;
+      background-color: var(--green);
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    margin-left: auto;
   }
 }
