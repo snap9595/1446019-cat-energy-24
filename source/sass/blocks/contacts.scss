@@ -2,6 +2,13 @@
   background-color: var(--white);
 }
 
+.contacts__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
 .contacts__slogan {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 1rem;
@@ -13,4 +20,37 @@
 .contacts__address {
   font-style: normal;
   line-height: 143%;
+  width: 140px;
+  text-align: right;
+}
+
+.page-footer__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 55px 30px;
+  }
+}
+
+.social__list {
+  list-style: none;
+  display: flex;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+.copyright__link {
+  margin-right: 150px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
 }

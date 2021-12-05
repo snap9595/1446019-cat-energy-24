@@ -9,10 +9,33 @@
 }
 
 .features__list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 35% 35%;
+    gap: 30px 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px 70px;
+  }
 }
 
-/* .features__list-item {} */
+.features__list-item {
+  min-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 227px;
+  }
+}
 
 .features__text {
   font-size: 0.88rem;

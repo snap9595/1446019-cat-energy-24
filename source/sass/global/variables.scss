@@ -4,7 +4,7 @@
   --white: #ffffff;
   --grey: #f2f2f2;
   --special-dark-grey: #444444;
-  --dark-grey:#222222;
+  --dark-grey: #222222;
   --light-grey: #eaeaea;
   --green: #68b738;
   --darken-green: #5eaa2f;
@@ -13,3 +13,7 @@
   --transparent-white30: rgba(255, 255, 255, 0.3);
   --transparent-green85: rgba(104, 183, 56, 0.85);
 }
+
+$tablet-width: 768px;
+$desktop-width: 1280px;
+/* $mobile-width-only: 767px; */

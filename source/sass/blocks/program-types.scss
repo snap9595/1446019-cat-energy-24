@@ -1,7 +1,30 @@
 .program-types {
-  font-family: "Oswald", "Arial", sans-serif;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+.program-types__wrapper {
+  min-height: 266px;
+  font-family: "Oswald", "Arial", sans-serif;
   background-color: var(--grey);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    min-height: 372px;
+    padding: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
+    min-height: 374px;
+  }
 }
 
 .program-types__title {
