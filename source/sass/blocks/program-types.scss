@@ -1,7 +1,7 @@
 .program-types {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -16,7 +16,7 @@
   background-color: var(--grey);
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     min-height: 372px;
     padding: 50px;
   }

@@ -13,15 +13,6 @@ img {
   height: auto;
 }
 
-.button {
-  font-family: "Oswald", "Arial", sans-serif;
-  color: var(--white);
-  background-color: var(--green);
-  border: none;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
 .page-container {
   max-width: 1280px;
   padding-left: 20px;
@@ -31,5 +22,49 @@ img {
   @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+
+.button {
+  padding: 10px;
+  text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: var(--white);
+  background-color: var(--green);
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.green-line {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  max-width: 266px;
+  font-size: 1.5rem;
+  line-height: 108%;
+  color: var(--black);
+  text-transform: none;
+  background-color: var(--white);
+
+  &::after {
+    z-index: -2;
+    position: absolute;
+    content: "";
+    height: 3px;
+    left: 0;
+    top: 14px;
+    background-color: var(--green);
+    width: 100vw;
+
+    @media (min-width: $tablet-width) {
+      left: -50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -50px*2;
+    }
   }
 }
