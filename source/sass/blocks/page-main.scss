@@ -1,8 +1,16 @@
-/* .page-main {} */
-
 .page-main__head {
   font-family: "Oswald", "Arial", sans-serif;
   color: var(--black);
+
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
 }
 
 .page-main__title {
@@ -11,8 +19,44 @@
   line-height: 125%;
 }
 
+.page-main__catalog-title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: inherit;
+  font-size: 2.25rem;
+  line-height: 125%;
+  color: var(--black);
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 64px;
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 74px;
+    margin-bottom: 70px;
+  }
+}
+
 .page-main__text {
+  max-width: 226px;
   font-size: 0.88rem;
   line-height: 129%;
   text-transform: uppercase;
+}
+
+.page-main__features {
+  margin-top: 20px;
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
 }

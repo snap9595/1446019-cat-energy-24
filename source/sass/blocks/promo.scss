@@ -7,20 +7,6 @@
     color: var(--black);
     background-image: none;
   }
-
-  .promo__link {
-    font-size: 0.88rem;
-    line-height: 129%;
-
-    &:hover {
-      background-color: var(--darken-green);
-    }
-
-    &:active {
-      color: var(--transparent-white30);
-      background-color: var(--darken-green);
-    }
-  }
 }
 
 .promo__inner {
@@ -86,6 +72,17 @@
   max-width: 281px;
   padding: 10px 73px;
   margin: 0 auto;
+  font-size: 0.88rem;
+  line-height: 129%;
+
+  &:hover {
+    background-color: var(--darken-green);
+  }
+
+  &:active {
+    color: var(--transparent-white30);
+    background-color: var(--darken-green);
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;

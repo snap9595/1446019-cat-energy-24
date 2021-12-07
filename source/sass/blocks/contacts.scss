@@ -7,9 +7,14 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+  }
 }
 
 .contacts__slogan {
+  flex-basis: 175px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 1rem;
   line-height: 125%;
