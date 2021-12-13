@@ -1,4 +1,4 @@
-.page-main__head {
+/* .page-main__head {
   font-family: "Oswald", "Arial", sans-serif;
   color: var(--black);
 
@@ -11,7 +11,7 @@
   @media (min-width: $desktop-width) {
     margin: 0 auto;
   }
-}
+} */
 
 .page-main__title {
   font-weight: normal;
@@ -51,12 +51,27 @@
   margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 45px;
+    /* margin-top: 45px; */
     margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 20px;
     margin-bottom: 0;
+  }
+}
+
+.page-main__program-types {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 265px;
+    margin-bottom: 64px;
   }
 }

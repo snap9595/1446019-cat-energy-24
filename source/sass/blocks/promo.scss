@@ -1,7 +1,7 @@
 .promo {
   font-family: "Oswald", "Arial", sans-serif;
   color: var(--white);
-  background-image: linear-gradient(180deg, var(--green) 64%, var(--white) 64%);
+  background-image: linear-gradient(180deg, var(--green) 63%, var(--white) 63%);
 
   @media (min-width: $tablet-width) {
     color: var(--black);
@@ -15,7 +15,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 50% 50%;
-    width: 1220px;
+    width: 1122px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -23,34 +23,43 @@
 
 .promo__title {
   max-width: 250px;
-  margin: 25px auto;
+  margin: 27px auto;
   text-align: center;
   font-weight: normal;
   font-size: 2.25rem;
-  line-height: 1.25;
+  line-height: 100%;
 
   @media (min-width: $tablet-width) {
-    margin-left: 100px;
     max-width: 414px;
+    margin-top: 59px;
+    margin-left: 88px;
+    margin-bottom: 41px;
+    font-size: 3.75rem;
+    line-height: 100%;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 84px;
     margin-left: 0;
   }
 }
 
 .promo__text {
   margin: 0 auto;
+  padding-bottom: 26px;
   max-width: 200px;
   font-size: 0.88rem;
   line-height: 110%;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-left: 100px;
+    margin-left: 88px;
     max-width: 283px;
+    padding-bottom: 0;
     text-align: left;
+    font-size: 1.25rem;
+    line-height: 110%;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,9 +78,10 @@
 }
 
 .promo__link {
-  max-width: 281px;
-  padding: 10px 73px;
+  max-width: 300px;
+  padding: 10px 72px;
   margin: 0 auto;
+  margin-top: 4px;
   font-size: 0.88rem;
   line-height: 129%;
 
@@ -86,13 +96,20 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    margin-left: 100px;
+    margin-top: 23px;
+    margin-left: 90px;
     top: -245px;
+    max-width: 245px;
+    min-height: 54px;
+    padding: 14px 27px;
+    font-size: 1.25rem;
+    line-height: 110%;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
     position: static;
     margin-left: 0;
+    margin-top: 50px;
   }
 }

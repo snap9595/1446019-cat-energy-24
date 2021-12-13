@@ -51,10 +51,18 @@
   padding: 10px;
   font-size: 1rem;
   line-height: 125%;
-  color: var(--dark);
+  color: var(--special-dark-grey);
   background-color: var(--grey);
   /* max-width: 550px; */
   margin: 0 auto;
+
+  &:hover {
+    background-color: var(--special-border-grey);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;

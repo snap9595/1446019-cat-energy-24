@@ -1,7 +1,5 @@
 .program-types {
   display: block;
-  /* padding-top: 20px;
-  padding-bottom: 20px; */
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -11,12 +9,41 @@
 }
 
 .program-types__wrapper {
+  position: relative;
   min-height: 266px;
+  /* margin-top: 20px; */
+  padding: 20px;
   font-family: "Oswald", "Arial", sans-serif;
   background-color: var(--grey);
 
+  &::before {
+    position: absolute;
+    content: "";
+    top: 25px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--green);
+
+    @media (min-width: $tablet-width) {
+      top: 91px;
+      left: auto;
+      right: 62px;
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 47px;
+      right: auto;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    /* margin-bottom: 20px; */
     min-height: 372px;
     padding: 50px;
   }
@@ -27,23 +54,172 @@
   }
 }
 
+.program-types__wrapper--slim {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 22px;
+    left: 29px;
+    width: 36px;
+    height: 50px;
+    background-image: url("../img/icons/black-cat.svg");
+    background-repeat: no-repeat;
+    background-size: 36px 50px;
+
+    @media (min-width: $tablet-width) {
+      top: 81px;
+      left: auto;
+      right: 92px;
+      width: 140px;
+      height: 194px;
+      background-size: 140px 194px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 41px;
+      right: auto;
+      left: 67px;
+      width: 70px;
+      height: 97px;
+      background-size: 70px 97px;
+    }
+  }
+}
+
+.program-types__wrapper--weight-gain {
+  position: relative;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 25px;
+    left: 12px;
+    width: 67px;
+    height: 50px;
+    background-image: url("../img/icons/pantera.svg");
+    background-repeat: no-repeat;
+    background-size: 67px 50px;
+
+    @media (min-width: $tablet-width) {
+
+      top: 135px;
+      left: auto;
+      right: 28px;
+      width: 268px;
+      height: 112px;
+      background-size: 268px 112px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 67px;
+      right: auto;
+      left: 33px;
+      width: 134px;
+      height: 56px;
+      background-size: 134px 56px;
+    }
+  }
+}
+
 .program-types__title {
+  max-width: 65%;
   font-weight: normal;
   font-size: 1.5rem;
+  margin: 10px 0 30px 70px;
   line-height: 1.54;
   text-transform: uppercase;
   color: var(--black);
+
+  @media (min-width: $tablet-width) {
+    font-size: 2.25rem;
+    line-height: 1.25;
+    margin: 22px 3px 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 22px 0 70px 164px;
+  }
 }
 
 .program-types__text {
+  margin: 0;
+  margin-right: 14px;
+  padding-bottom: 23px;
   font-family: "Arial", sans-serif;
   color: var(--special-dark-grey);
+
+  @media (min-width: $tablet-width) {
+    max-width: 56%;
+    padding-bottom: 33px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    padding-bottom: 9px;
+  }
 }
 
 .program-types__link {
+  position: relative;
+  display: block;
+  padding-top: 15px;
   font-size: 1rem;
   line-height: 125%;
   color: var(--black);
+  border-top: 1px solid var(--special-border-dark-grey-2);
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding-top: 17px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 115px;
+    top: 58%;
+    transform: rotate(270deg);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid var(--black);
+
+    @media (min-width: $tablet-width) {
+      left: 151px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 18px;
+    left: 100px;
+    top: 66%;
+    background-color: var(--black);
+
+    @media (min-width: $tablet-width) {
+      left: 135px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

@@ -128,7 +128,26 @@
   font-size: 1rem;
   line-height: 112%;
   text-transform: none;
+  appearance: none;
   border: 1px solid var(--special-border-dark-grey);
+
+  &:hover {
+    border: 1px solid var(--special-border-lighten-grey);
+  }
+
+  &:focus {
+    box-shadow: inset 0 0 0 2px var(--special-dark-grey);
+  }
+}
+
+.form-feedback__input:not(:placeholder-shown):not(:focus):invalid {
+  border: 3px solid var(--red);
+}
+
+.form-feedback__input::-webkit-outer-spin-button,
+.form-feedback__input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .form-feedback__textarea {
