@@ -53,11 +53,12 @@
               </li>
               <li class="form-feedback__item">
                 <label class="form-feedback__label" for="heft">Вес (кг):*</label>
-                <input class="form-feedback__input" type="number" id="heft" name="heft" placeholder="7" required>
+                <input class="form-feedback__input" type="number" id="heft" name="heft" min="1" max="100" step="1" placeholder="7" required>
               </li>
               <li class="form-feedback__item">
                 <label class="form-feedback__label" for="age">Возраст (лет):</label>
-                <input class="form-feedback__input" type="number" id="age" name="age" placeholder="7">
+                <input class="form-feedback__input" type="number" id="age" name="age" min="1" max="100" step="1"
+                  placeholder="7">
               </li>
             </ul>
           </fieldset>
