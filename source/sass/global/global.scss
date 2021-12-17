@@ -38,33 +38,32 @@ img {
 
 .green-line {
   position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: -20px;
-  margin-right: -20px;
-  max-width: 266px;
-  font-size: 1.5rem;
-  line-height: 108%;
-  color: var(--black);
-  text-transform: none;
-  background-color: var(--white);
 
   &::after {
-    z-index: -2;
     position: absolute;
     content: "";
-    height: 3px;
-    left: 0;
-    top: 14px;
+    z-index: -2;
+    height: 2px;
+    left: 20px;
+    right: 0;
+    top: 18px;
     background-color: var(--green);
-    width: 100vw;
 
     @media (min-width: $tablet-width) {
-      left: -50px;
+      left: 0;
+      top: 23px;
     }
+  }
+}
 
-    @media (min-width: $desktop-width) {
-      left: -50px*2;
-    }
+.green-line--fieldset::after {
+  top: 15px;
+
+  @media (min-width: $tablet-width) {
+    top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 26px;
   }
 }

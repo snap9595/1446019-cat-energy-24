@@ -50,6 +50,8 @@
 
     &::after {
       position: absolute;
+      counter-increment: section;
+      content: ""counter(section) "";
       z-index: -1;
       right: 0;
       top: -74px;
@@ -58,8 +60,6 @@
       font-size: 17.5rem;
       line-height: 1.25;
       color: var(--grey);
-      counter-increment: section;
-      content: ""counter(section) "";
     }
   }
 

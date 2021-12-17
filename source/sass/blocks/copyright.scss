@@ -1,8 +1,34 @@
-/* .copyright {} */
+.copyright {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 11px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright:hover .copyright__link {
+  fill: var(--devil-grey);
+}
+
+.copyright:hover .copyright__logo-svg {
+  fill: var(--green);
+}
 
 .copyright__link {
   text-decoration: none;
   color: var(--special-dark-grey);
+  font-size: 1rem;
+  margin-right: 139px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
 
   &:active {
     opacity: 0.3;
