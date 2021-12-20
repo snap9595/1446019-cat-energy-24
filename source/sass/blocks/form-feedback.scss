@@ -36,7 +36,7 @@
 }
 
 .form-feedback__legend {
-  /* width: max-content; */
+  max-width: max-content;
   padding-left: 0;
   margin-top: 2px;
   padding-right: 40px;
@@ -45,7 +45,6 @@
   color: var(--black);
   text-transform: none;
   background-color: var(--white);
-  /* overflow-wrap: break-word; */
 
   @media (min-width: $tablet-width) {
     font-size: 2.25rem;
@@ -53,8 +52,6 @@
     padding-left: 40px;
     margin-left: -40px;
   }
-
-  /* @media (min-width: $desktop-width) {} */
 }
 
 .form-feedback__list {
@@ -113,8 +110,6 @@
 .form-feedback__fieldset-area {
   margin-top: 19px;
   margin-bottom: 1px;
-
-  /* @media (min-width: $tablet-width) {} */
 }
 
 .form-feedback__list-name {

@@ -109,7 +109,7 @@
 
 .product-show__link {
   display: block;
-  width: 109%;
+  width: 100%;
   padding: 10px;
   font-size: 1rem;
   line-height: 125%;
@@ -125,6 +125,11 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 109%;
     margin-top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }

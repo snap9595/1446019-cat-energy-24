@@ -1,4 +1,6 @@
 .social {
+  width: 100%;
+
   @media (min-width: $tablet-width) {
     width: 200px;
     margin-left: 31px;
@@ -28,7 +30,6 @@
 .social__item {
   margin: 0 15px;
 
-  /* padding: 5px; */
   @media (min-width: $tablet-width) {
     margin: 0 10px;
   }
