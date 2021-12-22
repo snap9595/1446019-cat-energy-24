@@ -94,7 +94,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding-bottom: 12px;
+  padding-bottom: 11px;
   font-family: "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
@@ -118,7 +118,7 @@
 
 .additional-goods__link {
   display: block;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
   font-size: 1rem;
   line-height: 125%;
   text-decoration: none;
@@ -139,18 +139,31 @@
   flex-direction: column;
   align-items: center;
   min-height: 290px;
-  background-image: url("../img/cat-bag1.jpg");
-  /* background-color: var(--green); */
+  background-image: linear-gradient(var(--transparent-darken-green85) 100%, var(--green) 1%),
+    url("../img/cat-bag-mobile@1x.jpg");
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: linear-gradient(var(--transparent-darken-green85) 100%, var(--green) 1%),
+      url("../img/cat-bag-mobile@2x.jpg");
+  }
+
   margin-top: 37px;
   margin-bottom: 34px;
   background-position: center;
-  background-size: cover;
+  background-size: 100%, 100%;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     min-height: 200px;
     margin-top: 68px;
+    background-image: linear-gradient(var(--transparent-darken-green85) 100%, var(--green) 1%),
+      url("../img/cat-bag-tablet@1x.jpg");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: linear-gradient(var(--transparent-darken-green85) 100%, var(--green) 1%),
+        url("../img/cat-bag-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -159,6 +172,13 @@
     min-height: 288px;
     margin-top: 0;
     margin-left: auto;
+    background-image: linear-gradient(var(--transparent-darken-green85) 100%, var(--green) 1%),
+      url("../img/cat-bag-desktop@1x.jpg");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: linear-gradient(var(--transparent-darken-green85) 100%, var(--green) 1%),
+        url("../img/cat-bag-desktop@2x.jpg");
+    }
   }
 }
 

@@ -1,6 +1,3 @@
-/* .features {
-} */
-
 .features__title {
   margin: 0;
   margin-bottom: 40px;
@@ -45,7 +42,6 @@
 
 
   @media (min-width: $tablet-width) {
-    /* padding-top: 150px; */
     padding-left: 0;
 
     &::after {
@@ -88,10 +84,6 @@
 
   @media (min-width: $tablet-width) {
     min-height: 280px;
-  }
-
-  @media (min-width: $desktop-width) {
-    /* width: 227px; */
   }
 
   &--leaf {

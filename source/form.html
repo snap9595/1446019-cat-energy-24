@@ -15,26 +15,31 @@
 <body class="page__body">
   <header class="page-header">
     <h1 class="visually-hidden">Интернет-магазин фитнес еды Cat Energy</h1>
-    <div class="page-header__logo-wrapper">
-      <a class="page-header__logo-image" href="index.html">
-        <img src="./img/logos/logo-svg-mobile.svg" width="34" height="38" alt="Логотип интернет-магазина Cat Energy.">
-      </a>
-      <a tabindex="-1" class="page-header__logo-text" href="index.html">
-        <img src="./img/logos/logo-text.svg" width="101" height="18" alt="Логотип интернет-магазина Cat Energy.">
-      </a>
-      <button class="page-header__toggle page-header__toggle--closed" type="button"><span
-          class="visually-hidden">Открыть меню.</span>
-      </button>
-    </div>
-    <nav class="main-nav main-nav--closed">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
-          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Подбор программы</a></li>
-        </ul>
+    <div class="page-header__inner">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo-image" href="index.html">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="./img/logos/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/logos/logo-tablet.svg">
+            <img src="./img/logos/logo-svg-mobile.svg" alt="Логотип интернет-магазина Cat Energy.">
+          </picture>
+          <img class="page-header__logo-text" src="./img/logos/logo-text.svg" width="101" height="18"
+            alt="Логотип интернет-магазина Cat Energy.">
+        </a>
+        <button class="page-header__toggle page-header__toggle--closed" type="button"><span
+            class="visually-hidden">Открыть меню.</span>
+        </button>
       </div>
-    </nav>
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item "><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
+            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Подбор программы</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
