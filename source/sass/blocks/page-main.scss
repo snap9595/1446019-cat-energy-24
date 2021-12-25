@@ -80,6 +80,17 @@
   }
 }
 
+.page-main__slider {
+  @media (min-width: $tablet-width) {
+    margin-top: 76px;
+    margin-bottom: 92px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
 .page-main__program-types {
   margin-top: 20px;
   margin-bottom: 20px;
