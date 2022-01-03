@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="./img/icons/icon.png" type="image/svg+xml">
@@ -134,8 +136,11 @@
           </div>
         </div>
         <div class="slider page-main__slider">
-          <img class="slider__skinny-cat" src="./img/slider/skinny-cat.png" srcset="./img/slider/skinny-cat@2x.png 2x"
-            alt="Худой кот.">
+          <picture>
+            <source type="image/webp" srcset="./img/slider/skinny-cat.webp 1x, ./img/slider/skinny-cat@2x.webp 2x">
+            <img class="slider__skinny-cat" src="./img/slider/skinny-cat.png" srcset="./img/slider/skinny-cat@2x.png 2x"
+              alt="Худой кот.">
+          </picture>
           <div class="slider__top">
             <img class="slider__fat-cat" src="./img/slider/cat-fat.png" srcset="./img/slider/cat-fat@2x.png 2x"
               alt="Жирный кот.">
