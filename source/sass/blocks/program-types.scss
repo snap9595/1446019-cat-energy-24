@@ -102,13 +102,13 @@
   &::after {
     position: absolute;
     content: "";
-    top: 25px;
+    top: 32px;
     left: 12px;
     width: 67px;
     height: 50px;
     background-image: url("../img/icons/pantera.svg");
     background-repeat: no-repeat;
-    background-size: 67px 50px;
+    background-size: 67px 28px;
 
     @media (min-width: $tablet-width) {
 
