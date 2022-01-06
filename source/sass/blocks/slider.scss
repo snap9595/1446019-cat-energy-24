@@ -163,8 +163,9 @@
   width: 33px;
   border-radius: 50%;
   border: 1px solid var(--special-border-lighten-grey);
-  background: var(--white);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+  background: var(--green);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16),
+              inset 0 0 0 12px var(--white);
   cursor: pointer;
   appearance: none;
   margin-top: -13px;

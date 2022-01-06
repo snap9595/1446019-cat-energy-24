@@ -257,7 +257,7 @@
   font-size: 1rem;
   line-height: 112%;
   text-transform: none;
-  appearance: none;
+  appearance: textfield;
   border: 1px solid var(--special-border-dark-grey);
 
   &:hover {
@@ -282,6 +282,7 @@
 .form-feedback__input::-webkit-outer-spin-button,
 .form-feedback__input::-webkit-inner-spin-button {
   appearance: none;
+  display: none;
   margin: 0;
 }
 

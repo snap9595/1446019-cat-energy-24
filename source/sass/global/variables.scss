@@ -30,3 +30,5 @@
 
 $tablet-width: 768px;
 $desktop-width: 1280px;
+
+$mobile-only: $tablet-width - 1px;
