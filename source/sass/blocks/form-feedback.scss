@@ -38,7 +38,7 @@
 .form-feedback__legend {
   max-width: max-content;
   padding-left: 0;
-  margin-top: 2px;
+  margin-top: 1px;
   padding-right: 40px;
   font-size: 1.5rem;
   line-height: 108%;
@@ -47,10 +47,11 @@
   background-color: var(--white);
 
   @media (min-width: $tablet-width) {
-    font-size: 2.25rem;
-    line-height: 100%;
     padding-left: 40px;
     margin-left: -40px;
+    margin-top: 2px;
+    font-size: 2.25rem;
+    line-height: 100%;
   }
 }
 
@@ -86,7 +87,7 @@
   }
 
   &--additionally {
-    margin: 32px 0;
+    margin: 34px 0 31px;
     color: var(--black);
     padding-left: 24px;
 
@@ -95,7 +96,7 @@
       grid-template-rows: 1fr 1fr;
       row-gap: 32px;
       column-gap: 99px;
-      margin-top: 56px;
+      margin-top: 58px;
       margin-bottom: 54px;
       padding-left: 38px;
     }
@@ -186,7 +187,7 @@
 }
 
 .control-label {
-  padding-left: 22px;
+  padding-left: 21px;
 }
 
 .form-feedback__icon-check {
@@ -212,6 +213,7 @@
 }
 
 .form-feedback__item {
+  position: relative;
   display: flex;
   align-items: center;
 
@@ -221,6 +223,20 @@
     @media (min-width: $tablet-width) {
       height: 40px;
     }
+  }
+}
+
+.form-feedback__icon {
+  position: absolute;
+  right: 14px;
+  fill: var(--black);
+
+  @media (min-width: $tablet-width) {
+    right: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 18px;
   }
 }
 
@@ -237,7 +253,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    column-gap: 78px;
+    column-gap: 80px;
   }
 }
 
@@ -247,12 +263,16 @@
   @media (min-width: $tablet-width) {
     margin-right: 21px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 18px;
+  }
 }
 
 .form-feedback__input {
   flex-grow: 1;
   min-height: 46px;
-  padding: 5px 15px 7px;
+  padding: 5px 42px 7px 15px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 1rem;
   line-height: 112%;
@@ -269,6 +289,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 5px 50px 7px 15px;
     min-height: 52px;
     font-size: 1.25rem;
     line-height: 130%;
@@ -322,7 +343,7 @@
     display: grid;
     grid-template-columns: repeat(2, 283px);
     column-gap: 8px;
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
     padding-left: 71px;
     padding-right: 71px;
 
