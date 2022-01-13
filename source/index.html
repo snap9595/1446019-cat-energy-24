@@ -16,7 +16,7 @@
 
 <body class="page__body">
   <header class="page-header page-header--index">
-    <h1 class="visually-hidden">Интернет-магазин фитнес еды Cat Energy</h1>
+    <h1 class="visually-hidden">Интернет-магазин фитнес еды Cat Energy.</h1>
     <div class="page-header__inner">
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo-image" aria-current="page">
@@ -52,20 +52,22 @@
       <div class="selection-program__inner page-container">
         <h2 class="selection-program__title">Функциональное питание для котов</h2>
         <p class="selection-program__text">Занялся собой? Займись котом! </p>
-        <picture class="selection-program__contents">
-          <source type="image/webp" media="(min-width: 1280px)"
-            srcset="img/index-product-desktop@1x.webp 1x, img/index-product-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/index-product-tablet@1x.webp 1x, img/index-product-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/index-product-mobile@1x.webp 1x, img/index-product-mobile@2x.webp 2x">
+        <div class="selection-program__wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1280px)"
+              srcset="img/index-product-desktop@1x.webp 1x, img/index-product-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/index-product-tablet@1x.webp 1x, img/index-product-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-product-mobile@1x.webp 1x, img/index-product-mobile@2x.webp 2x">
 
-          <source media="(min-width: 1280px)"
-            srcset="img/index-product-desktop@1x.png 1x, img/index-product-@2x.png 2x">
-          <source media="(min-width: 768px)"
-            srcset="img/index-product-tablet@1x.png 1x, img/index-product-tablet@2x.png 2x">
-          <img class="selection-program__img" src="img/index-product-mobile@1x.png"
-            srcset="img/index-product-mobile@2x.png 2x" alt="Пример продукта.">
-        </picture>
+            <source media="(min-width: 1280px)"
+              srcset="img/index-product-desktop@1x.png 1x, img/index-product-@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/index-product-tablet@1x.png 1x, img/index-product-tablet@2x.png 2x">
+            <img class="selection-program__img" src="img/index-product-mobile@1x.png"
+              srcset="img/index-product-mobile@2x.png 2x" alt="Пример продукта.">
+          </picture>
+        </div>
         <a class="selection-program__link button" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -73,7 +75,7 @@
 
   <main class="page-main">
     <section class="program-types page-main__program-types  page-container">
-      <h2 class="visually-hidden">Варианты программы</h2>
+      <h2 class="visually-hidden">Варианты программы.</h2>
       <div class="program-types__wrapper program-types__wrapper--slim">
         <h3 class="program-types__title">Похудение</h3>
         <p class="program-types__text">
@@ -111,7 +113,7 @@
             функциональное питание.</p>
         </li>
         <li class="features__list-item features__list-item--alarm">
-          <p class="features__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          <p class="features__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
         </li>
       </ol>
     </section>
@@ -121,8 +123,7 @@
         <div class="example__inner">
           <h3 class="example__title">Живой пример</h3>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-            Отличный результат без
-            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+            Отличный результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
           <div class="example__wrapper-expensis">
             <ul class="example__list">
               <li class="example__item">
@@ -137,15 +138,25 @@
         </div>
         <div class="slider page-main__slider">
           <picture>
-            <source type="image/webp" srcset="./img/slider/skinny-cat.webp 1x, ./img/slider/skinny-cat@2x.webp 2x">
-            <img class="slider__skinny-cat" src="./img/slider/skinny-cat.png" srcset="./img/slider/skinny-cat@2x.png 2x"
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="./img/slider/skinny-cat.webp 1x, ./img/slider/skinny-cat@2x.webp 2x">
+            <source type="image/webp"
+              srcset="./img/slider/skinny-cat-mobile@1x.webp 1x, ./img/slider/skinny-cat-mobile@2x.webp 2x">
+
+            <source media="(min-width: 768px)" srcset="./img/slider/skinny-cat.png 1x, ./img/slider/skinny-cat@2x.png 2x">
+            <img class="slider__skinny-cat" src="./img/slider/skinny-cat-mobile@1x.png" srcset="./img/slider/skinny-cat-mobile@2x.png 2x"
               alt="Худой кот.">
           </picture>
           <div class="slider__top">
             <picture>
-              <source type="image/webp" srcset="./img/slider/cat-fat.webp 1x, ./img/slider/cat-fat@2x.webp 2x">
-              <img class="slider__fat-cat" src="./img/slider/cat-fat.png" srcset="./img/slider/cat-fat@2x.png 2x"
-                alt="Жирный кот.">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/slider/cat-fat.webp 1x, ./img/slider/cat-fat@2x.webp 2x">
+              <source type="image/webp"
+                srcset="./img/slider/cat-fat-mobile@1x.webp 1x, ./img/slider/cat-fat-mobile@2x.webp 2x">
+
+              <source media="(min-width: 768px)" srcset="./img/slider/cat-fat.png 1x, ./img/slider/cat-fat@2x.png 2x">
+              <img class="slider__fat-cat" src="./img/slider/cat-fat-mobile@1x.png"
+                srcset="./img/slider/cat-fat-mobile@2x.png 2x" alt="Жирный кот.">
             </picture>
           </div>
           <div class="slider__controls">
@@ -164,11 +175,11 @@
   <footer class="page-footer">
     <section class="contacts contacts--index">
       <div class="contacts__wrapper">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург</address>
+        <h2 class="visually-hidden">Контактная информация.</h2>
+        <p class="contacts__slogan">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+        <address class="contacts__address">ул. Большая Конюшенная, д.&nbsp;19/8
+          <span class="contacts__city">Санкт-Петербург</span>
+        </address>
       </div>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.822607321338!2d30.317409!3d59.968266!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sen!2sru!4v1639407697076!5m2!1sen!2sru"
@@ -182,20 +193,20 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте.">
-              <svg class="social__link--vkontakte" width="30" height="33">
+              <svg class="social__icon social__icon--vkontakte" width="30" height="33">
                 <use href="img/sprite.svg#icon-vkontakte"></use>
               </svg></a>
           </li>
           <li class="social__item">
-            <a class="social__link " href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме.">
-              <svg class="social__link--instagram" width="30" height="33">
+            <a class="social__link" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме.">
+              <svg class="social__icon social__icon--instagram" width="30" height="33">
                 <use href="img/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link " href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке.">
-              <svg class="social__link--facebook" width="30" height="33">
+            <a class="social__link" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке.">
+              <svg class="social__icon social__icon--facebook" width="30" height="33">
                 <use href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>

@@ -1,10 +1,15 @@
 .program-types {
-  display: block;
+  display: grid;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 30px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
+    gap: 30px 80px;
   }
 }
 
@@ -89,15 +94,6 @@
 
 .program-types__wrapper--weight-gain {
   position: relative;
-  margin-top: 20px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 0;
-  }
 
   &::after {
     position: absolute;

@@ -2,39 +2,48 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 200px;
-    margin-left: 31px;
+    max-width: 350px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 300px;
+    max-width: 700px;
   }
 }
 
 .social__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 0;
-  padding: 17px 0 5px;
+  padding: 13px 0 10px;
   list-style: none;
   border-top: 1px solid var(--special-border-dark-grey-2);
   border-bottom: 1px solid var(--special-border-dark-grey-2);
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 11px 0;
+  }
 }
 
 .social__item {
-  margin: 0 15px;
+  margin: 0 16px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 11px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin: 0 10px;
   }
 }
 
 .social__link {
-  width: 30px;
+  width: 22px;
   height: 41px;
   display: block;
   background-repeat: no-repeat;
@@ -50,36 +59,36 @@
   }
 }
 
-.social__link--vkontakte,
-.social__link--instagram {
+.social__icon {
   width: 100%;
   height: 100%;
   display: block;
+}
+
+.social__icon--vkontakte,
+.social__icon--instagram {
   fill: var(--devil-grey);
 }
 
-.social__link--facebook {
-  width: 100%;
-  height: 100%;
-  display: block;
+.social__icon--facebook {
   fill: transparent;
   stroke: var(--devil-grey);
 }
 
-.social__link:hover .social__link--vkontakte {
+.social__link:hover .social__icon--vkontakte {
   fill: var(--green);
 }
 
-.social__link:hover .social__link--instagram {
+.social__link:hover .social__icon--instagram {
   fill: var(--green);
 }
 
-.social__link:hover .social__link--facebook {
+.social__link:hover .social__icon--facebook {
   stroke: var(--green);
 }
 
-.social__link--facebook:active,
-.social__link--vkontakte:active,
-.social__link--instagram:active {
+.social__icon--facebook:active,
+.social__icon--vkontakte:active,
+.social__icon--instagram:active {
   opacity: 0.3;
 }

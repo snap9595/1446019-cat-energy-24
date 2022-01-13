@@ -61,13 +61,13 @@ img {
 }
 
 .green-line--fieldset::after {
-  top: 15px;
+  top: -12px;
 
   @media (min-width: $tablet-width) {
-    top: 25px;
+    top: -11px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 26px;
+    top: -12px;
   }
 }

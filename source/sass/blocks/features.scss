@@ -24,7 +24,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 35% 35%;
-    gap: 36px 135px;
+    gap: 55px 135px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,7 +83,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 280px;
+    min-height: 263px;
   }
 
   &--leaf {
@@ -129,7 +129,7 @@
   line-height: 129%;
 
   @media (min-width: $tablet-width) {
-    padding-top: 15px;
+    padding-top: 33px;
     font-size: 1rem;
     line-height: 150%;
   }

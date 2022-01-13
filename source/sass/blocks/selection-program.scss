@@ -26,8 +26,9 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 50% 50%;
-    width: 1122px;
-    margin-top: 22px;
+    grid-template-rows: min-content min-content min-content min-content;
+    width: 1175px;
+    margin-top: 12px;
     margin-bottom: 20px;
   }
 }
@@ -42,23 +43,25 @@
 
   @media (min-width: $tablet-width) {
     max-width: 414px;
-    margin-top: 48px;
-    margin-left: 88px;
+    margin-top: 47px;
+    margin-left: 87px;
     margin-bottom: 40px;
+    grid-column: 1;
     font-size: 3.75rem;
     line-height: 100%;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 70px;
-    margin-left: 0;
-    margin-bottom: 6px;
+    margin-top: 82px;
+    margin-left: 27px;
+    margin-bottom: 22px;
     min-height: 120px;
   }
 }
 
 .selection-program__text {
+  grid-column: 1;
   margin: 0 auto;
   padding-bottom: 29px;
   max-width: 200px;
@@ -69,7 +72,7 @@
   @media (min-width: $tablet-width) {
     margin-left: 89px;
     max-width: 283px;
-    padding-bottom: 17px;
+    padding-bottom: 19px;
     text-align: left;
     font-size: 1.25rem;
     line-height: 110%;
@@ -77,29 +80,30 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
-    margin-left: 0;
+    margin-left: 27px;
+    margin-top: 17px;
+    padding-bottom: 0;
+    margin-bottom: 51px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .selection-program__contents {
-    display: contents;
+.selection-program__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1;
+    grid-row: 3/5;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    transform: translateX(-30%);
   }
 }
 
 .selection-program__img {
   display: block;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    transform: translateY(-14%);
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 2/3;
-    grid-row: 1/4;
-    transform: translateX(-29%);
-  }
 }
 
 .selection-program__link {
@@ -122,7 +126,8 @@
   @media (min-width: $tablet-width) {
     position: relative;
     grid-row-start: 3;
-    margin-top: 30px;
+    grid-column: 1;
+    margin-top: 29px;
     margin-left: 90px;
     max-width: 245px;
     min-height: 54px;
@@ -132,9 +137,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1/2;
     position: static;
-    margin-left: 0;
+    margin-left: 27px;
     margin-top: 0;
   }
 }

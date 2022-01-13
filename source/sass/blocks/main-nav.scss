@@ -44,7 +44,6 @@
     display: block;
     top: 10px;
     width: 100%;
-    /* background-color: var(--white); */
 
     @media (min-width: $tablet-width) {
       display: flex;
@@ -98,7 +97,7 @@
       position: absolute;
       left: 0;
       right: 0;
-      bottom: -8px;
+      bottom: -10px;
       height: 2px;
       background-color: var(--green);
     }

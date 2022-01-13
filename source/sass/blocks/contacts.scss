@@ -22,9 +22,8 @@
   padding: 11px 20px;
   padding-bottom: 9px;
 
-
   @media (min-width: $tablet-width) {
-    padding: 40px 70px;
+    padding: 41px 70px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,6 +58,7 @@
   width: 140px;
 
   @media (min-width: $tablet-width) {
+    width: 165px;
     font-size: 1rem;
     line-height: 125%;
     text-align: right;
@@ -67,5 +67,14 @@
   @media (min-width: $desktop-width) {
     text-align: left;
     width: 155px;
+  }
+}
+
+.contacts__city {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 19px;
+    margin-bottom: 6px;
   }
 }
