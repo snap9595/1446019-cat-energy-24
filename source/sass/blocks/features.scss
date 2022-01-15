@@ -51,6 +51,7 @@
       z-index: -1;
       right: 0;
       top: -74px;
+      width: 132px;
       font-family: "Oswald", "Arial", sans-serif;
       font-weight: 400;
       font-size: 17.5rem;
@@ -62,6 +63,7 @@
   @media (min-width: $desktop-width) {
     &::after {
       right: 0;
+      width: 130px;
     }
   }
 

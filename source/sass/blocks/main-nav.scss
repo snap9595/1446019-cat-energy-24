@@ -91,7 +91,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__item--active {
+  .main-nav__link--active {
     &::after {
       content: "";
       position: absolute;
@@ -105,7 +105,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__item--index .main-nav__item--active::after {
+  .main-nav__item--index .main-nav__link--active::after {
     position: absolute;
     content: "";
     background-color: var(--white);
