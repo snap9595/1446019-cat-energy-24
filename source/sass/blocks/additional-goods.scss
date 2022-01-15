@@ -82,10 +82,10 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font-size: 1.25rem;
-    line-height: 125%;
     padding-top: 23px;
     padding-bottom: 22px;
+    font-size: 1.25rem;
+    line-height: 125%;
   }
 }
 
@@ -99,7 +99,7 @@
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
-    padding-top: 9px;
+    padding-top: 5px;
     padding-bottom: 0;
     font-size: 1rem;
     line-height: 125%;
@@ -112,7 +112,7 @@
 
 .additional-goods__price {
   @media (min-width: $tablet-width) {
-    padding-left: 49px;
+    padding-left: 52px;
   }
 }
 
@@ -205,10 +205,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    text-align: center;
     padding: 0 1px;
     margin: 0;
     padding-top: 187px;
+    width: 155px;
+    text-align: center;
   }
 
   &::before {

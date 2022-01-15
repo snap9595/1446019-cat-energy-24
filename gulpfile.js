@@ -16,7 +16,9 @@ import browser from 'browser-sync';
 // Styles
 
 export const styles = () => {
-  return gulp.src('source/sass/style.scss', { sourcemaps: true })
+  return gulp.src('source/sass/style.scss', {
+      sourcemaps: true
+    })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
@@ -24,7 +26,9 @@ export const styles = () => {
       csso()
     ]))
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css', {
+      sourcemaps: '.'
+    }))
     .pipe(browser.stream());
 }
 
@@ -44,6 +48,7 @@ const scripts = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
     .pipe(gulp.dest('build/js'))
+    .pipe(browser.stream());
 }
 
 // Images
@@ -73,12 +78,16 @@ const createWebp = () => {
 
 const svg = () =>
   gulp.src(['source/img/**/*.svg', '!source/img/sprite/*.svg'])
-    .pipe(svgo())
-    .pipe(gulp.dest('build/img'));
+  .pipe(svgo())
+  .pipe(gulp.dest('build/img'));
 
 const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
-    .pipe(svgo())
+    .pipe(svgo({
+      plugins: [{
+        removeViewBox: false
+      }]
+    }))
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -90,12 +99,12 @@ const sprite = () => {
 
 const copy = (done) => {
   gulp.src([
-    'source/fonts/*.{woff2,woff}',
-    'source/*.ico',
-    'source/*.webmanifest',
-  ], {
-    base: 'source'
-  })
+      'source/fonts/*.{woff2,woff}',
+      'source/*.ico',
+      'source/*.webmanifest',
+    ], {
+      base: 'source'
+    })
     .pipe(gulp.dest('build'))
   done();
 }
@@ -132,7 +141,7 @@ const reload = (done) => {
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/*.js', gulp.series(scripts));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 // Build
