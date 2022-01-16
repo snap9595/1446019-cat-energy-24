@@ -88,6 +88,10 @@
     min-height: 263px;
   }
 
+  @media (min-width: $desktop-width) {
+    min-height: 250px;
+  }
+
   &--leaf {
     &::before {
       position: absolute;
@@ -131,8 +135,14 @@
   line-height: 129%;
 
   @media (min-width: $tablet-width) {
-    padding-top: 33px;
+    padding-top: 85px;
+    padding-bottom: 50px;
     font-size: 1rem;
     line-height: 150%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 82px;
+    padding-bottom: 35px;
   }
 }

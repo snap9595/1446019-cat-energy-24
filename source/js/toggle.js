@@ -1,9 +1,13 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.page-header__toggle');
 var logoWrapper = document.querySelector('.page-header__logo-wrapper')
+var map = document.querySelector('.contacts')
+
 
 navMain.classList.remove('main-nav--nojs');
 navToggle.classList.remove('page-header__toggle--nojs');
+map.classList.remove('contacts__map');
+
 
 
 navToggle.addEventListener('click', function () {

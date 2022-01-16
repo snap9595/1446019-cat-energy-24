@@ -5,6 +5,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 700px;
     margin-left: auto;
   }
 }
@@ -89,7 +90,7 @@
   }
 
   &:hover {
-    text-shadow: 0 4px 4px var(--transparent-black25);
+    opacity: 0.6;
   }
 
   &:active {
