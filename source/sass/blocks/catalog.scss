@@ -19,3 +19,7 @@
     gap: 60px 80px;
   }
 }
+
+.catalog:last-child {
+  border-bottom: 1px solid var(--special-border-grey);
+}

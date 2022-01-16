@@ -71,3 +71,19 @@ img {
     top: -12px;
   }
 }
+
+.green-line--comment::after {
+  top: -36px;
+
+  @media (min-width: 507px) {
+    top: -10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: -11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -12px;
+  }
+}

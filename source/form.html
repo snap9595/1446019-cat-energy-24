@@ -28,11 +28,11 @@
           <img class="page-header__logo-text" src="./img/logos/logo-text.svg" width="101" height="18"
             alt="Логотип интернет-магазина Cat Energy.">
         </a>
-        <button class="page-header__toggle page-header__toggle--closed" type="button"><span
+        <button class="page-header__toggle page-header__toggle--closed page-header__toggle--nojs" type="button"><span
             class="visually-hidden">Открыть меню.</span>
         </button>
       </div>
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav  main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item "><a class="main-nav__link" href="index.html">Главная</a></li>
@@ -79,31 +79,31 @@
               <label class="form-feedback__label-radio" for="slimming">
                 <input class="visually-hidden form-feedback__input-label" type="radio" id="slimming" name="programs"
                   value="slimming" checked>
-                <span class="control-mark"></span>
-                <span class="control-label">Похудение</span>
+                <span class="form-feedback__control-mark"></span>
+                <span class="form-feedback__control-label">Похудение</span>
               </label>
             </li>
             <li class="form-feedback__item form-feedback__item--programs">
               <label class="form-feedback__label-radio" for="weight-gain">
                 <input class="visually-hidden form-feedback__input-label" type="radio" id="weight-gain" name="programs"
                   value="weight-gain">
-                <span class="control-mark"></span>
-                <span class="control-label">Набор массы</span>
+                <span class="form-feedback__control-mark"></span>
+                <span class="form-feedback__control-label">Набор массы</span>
               </label>
             </li>
             <li class="form-feedback__item form-feedback__item--programs">
               <label class="form-feedback__label-radio" for="need-advice">
                 <input class="visually-hidden form-feedback__input-label" type="radio" id="need-advice" name="programs"
                   value="need-advice">
-                <span class="control-mark"></span>
-                <span class="control-label">Не знаю (нужен ваш совет)</span>
+                <span class="form-feedback__control-mark"></span>
+                <span class="form-feedback__control-label">Не знаю (нужен ваш совет)</span>
               </label>
             </li>
           </ul>
         </fieldset>
       </div>
 
-      <fieldset class="form-feedback__fieldset green-line green-line--fieldset">
+      <fieldset class="form-feedback__fieldset green-line green-line--comment">
         <legend class="form-feedback__legend">Контактные данные (владельца&nbsp;кота)</legend>
         <div class="page-container">
           <ul class="form-feedback__list form-feedback__contacts ">
@@ -144,8 +144,8 @@
               <label class="form-feedback__label-radio " for="sweetener">
                 <input class="visually-hidden form-feedback__input-label" type="checkbox" id="sweetener"
                   name="sweetener" checked>
-                <span class="control-mark"></span>
-                <span class="control-label">Cахарозаменитель</span>
+                <span class="form-feedback__control-mark"></span>
+                <span class="form-feedback__control-label">Cахарозаменитель</span>
                 <svg class="form-feedback__icon-check" width="26" height="26">
                   <use href="img/sprite.svg#icon-check"></use>
                 </svg>
@@ -155,8 +155,8 @@
               <label class="form-feedback__label-radio" for="potable-water">
                 <input class="visually-hidden form-feedback__input-label" type="checkbox" id="potable-water"
                   name="potable-water">
-                <span class="control-mark"></span>
-                <span class="control-label">Питьевая вода</span>
+                <span class="form-feedback__control-mark"></span>
+                <span class="form-feedback__control-label">Питьевая вода</span>
                 <svg class="form-feedback__icon-check" width="26" height="26">
                   <use href="img/sprite.svg#icon-check"></use>
                 </svg>
@@ -165,8 +165,8 @@
             <li class="form-feedback__item form-feedback__item--additionally">
               <label class="form-feedback__label-radio" for="milk">
                 <input class="visually-hidden form-feedback__input-label" type="checkbox" id="milk" name="milk">
-                <span class="control-mark"></span>
-                <span class="control-label">Молоко</span>
+                <span class="form-feedback__control-mark"></span>
+                <span class="form-feedback__control-label">Молоко</span>
                 <svg class="form-feedback__icon-check" width="26" height="26">
                   <use href="img/sprite.svg#icon-check"></use>
                 </svg>
@@ -175,8 +175,8 @@
             <li class="form-feedback__item form-feedback__item--additionally">
               <label class="form-feedback__label-radio" for="vitamins">
                 <input class="visually-hidden form-feedback__input-label" type="checkbox" id="vitamins" name="vitamins">
-                <span class="control-mark"></span>
-                <span class="control-label">Витамины</span>
+                <span class="form-feedback__control-mark"></span>
+                <span class="form-feedback__control-label">Витамины</span>
                 <svg class="form-feedback__icon-check" width="26" height="26">
                   <use href="img/sprite.svg#icon-check"></use>
                 </svg>
@@ -202,7 +202,7 @@
           <span class="contacts__city">Санкт-Петербург</span>
         </address>
       </div>
-      <iframe
+      <iframe class="contacts__map"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.822607321338!2d30.317409!3d59.968266!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sen!2sru!4v1639407697076!5m2!1sen!2sru"
         width="600" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
@@ -236,10 +236,9 @@
       </div>
       <div class="copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a href="https://htmlacademy.ru/intensive/adaptive"><svg class="copyright__logo-svg" width="27" height="34"
-            viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M13.6 0h-.1L0 1.4V26l13.5 8L27 26V1.4L13.6 0Zm11.6 25-11.7 7-11.7-7V15l11.7 6.8v1.3l-8-4.7v1.2l8 4.8v1.3l-8-4.8v1.2l8 4.9 8.1-4.9V17l3.6-2.1V25Zm0-11.5L22 15.3l-1.5 1-7-4.3v1.2l6 3.6-.2.1-.8.5-5-3v1.3l3.9 2.3-1 .6-3-1.7v1.2l2 1.2-2 1.1-11.6-6.8 11.6-7 11.8 6.9Zm0-1.3L13.4 5.3l-11.6 7V3l11.7-1.2L25.2 3v9.2Z" />
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="copyright__logo-svg" width="27" height="34">
+            <use href="img/sprite.svg#icon-footer-logo"></use>
           </svg>
         </a>
       </div>
